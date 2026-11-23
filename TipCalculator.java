@@ -19,18 +19,17 @@ public class TipCalculator {
         System.out.println("=== Tip Calculator v1.0 ===");
         System.out.print("Enter the bill amount: ");
         double bill = scanner.nextDouble();
-
-      System.out.print("Number of people: ");
+        System.out.print("Enter the tip percentage: ");
+        double percent = scanner.nextDouble();
+        System.out.print("Number of people: ");
         int people = scanner.nextInt();
 
-        double tip = calculateTip(bill);
+        double tip = bill * percent / 100;
         double total = bill + tip;
-
-        System.out.printf("Tip (%.0f%%): %.2f%n", TIP_PERCENT, tip);
+        System.out.printf("Tip (%.0f%%): %.2f%n", percent, tip);
         System.out.printf("Total:      %.2f%n", total);
         System.out.printf("Each pays:  %.2f%n", total / people);
 
-        
         scanner.close();
     }
 }
