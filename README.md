@@ -34,7 +34,7 @@ Total:      230.00
 ## Team
 - Lina
 - Abber
-- 
+- Haneen
 
 ## Releases
 See [RELEASE_NOTES.md](RELEASE_NOTES.md) for the changelog.
